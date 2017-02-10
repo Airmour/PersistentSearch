@@ -234,6 +234,10 @@ public class SearchBox extends RelativeLayout {
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before,
 									  int count) {
+				
+				if (mAdapter != null) 
+                 		   mAdapter.notifyDataSetChanged();
+                		
 
 			}
 		});
